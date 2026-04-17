@@ -41,7 +41,7 @@ export default function About() {
                 subtitle="EPJE Construction est une entreprise spécialisée dans le secteur du bâtiment, fondée sur l'expertise et la passion."
             />
         </div>
-        <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none" />
+        <div className="absolute inset-0 opacity-10 bg-[url('/images/realisations-4.PNG')] bg-cover bg-center pointer-events-none" />
       </section>
 
       {/* Story */}
@@ -61,10 +61,10 @@ export default function About() {
             </div>
             <div className="grid grid-cols-2 gap-4">
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mt-12 transition-transform hover:-translate-y-2">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Chantier" referrerPolicy="no-referrer" />
+                <img src="/images/realisations-1.PNG" className="w-full h-full object-cover" alt="Chantier" referrerPolicy="no-referrer" />
               </div>
               <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-2">
-                <img src="https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=2070&auto=format&fit=crop" className="w-full h-full object-cover" alt="Architecture" referrerPolicy="no-referrer" />
+                <img src="/images/equipe.PNG" className="w-full h-full object-cover" alt="Architecture" referrerPolicy="no-referrer" />
               </div>
             </div>
           </div>

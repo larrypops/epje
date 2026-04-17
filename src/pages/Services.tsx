@@ -13,7 +13,7 @@ const detailedServices = [
     icon: Building2,
     description: "Nous réalisons vos projets du terrassement à la livraison clé en main. Une expertise technique pour des structures solides et durables.",
     items: ["Maisons individuelles", "Immeubles résidentiels", "Bâtiments commerciaux", "Hangars & structures industrielles"],
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/realisations-1.PNG"
   },
   {
     id: "renovation",
@@ -21,7 +21,7 @@ const detailedServices = [
     icon: Hammer,
     description: "Donnez une seconde vie à vos bâtiments. Nous intervenons pour transformer, agrandir ou remettre à neuf vos espaces existants.",
     items: ["Réfection complète", "Modernisation des espaces", "Extension de bâtiments", "Amélioration esthétique"],
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/realisations-2.PNG"
   },
   {
     id: "architecture",
@@ -29,7 +29,7 @@ const detailedServices = [
     icon: Ruler,
     description: "Un projet réussi commence par une étude minutieuse. Nous vous accompagnons dans la conception technique et budgétaire.",
     items: ["Conception de plans 2D/3D", "Devis détaillés", "Conseils techniques", "Optimisation des coûts"],
-    image: "https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=2070&auto=format&fit=crop"
+    image: "/images/realisations-3.PNG"
   },
   {
     id: "carrelage",
@@ -37,7 +37,7 @@ const detailedServices = [
     icon: Layout,
     description: "La finition est notre signature. Nos artisans carreleurs réalisent des poses millimétrées pour un rendu esthétique irréprochable.",
     items: ["Carrelage sols & murs", "Faïence (cuisine & bain)", "Terrasses & dalles extérieures", "Pose de placo & finitions", "Pierre naturelle"],
-    image: "https://images.unsplash.com/photo-1502005075163-5240c9689445?q=80&w=1770&auto=format&fit=crop"
+    image: "/images/carreaux-1.PNG"
   },
   {
     id: "immobilier",
@@ -45,7 +45,7 @@ const detailedServices = [
     icon: HomeIcon,
     description: "Trouver le bon terrain ou la maison idéale ne doit plus être un parcours du combattant. Nous facilitons vos transactions.",
     items: ["Mise en relation", "Accompagnement administratif", "Conseil investissement", "Gestion locative"],
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop"
+    image: "/images/realisations-4.PNG"
   }
 ];
 

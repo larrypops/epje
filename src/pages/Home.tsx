@@ -55,7 +55,7 @@ export default function Home() {
         {/* Background Overlay with Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop" 
+            src="/images/realisations-1.PNG" 
             alt="Construction" 
             className="w-full h-full object-cover opacity-30 grayscale"
             referrerPolicy="no-referrer"
@@ -130,7 +130,7 @@ export default function Home() {
                 className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10"
               >
                 <img 
-                  src="https://images.unsplash.com/photo-1503387762-592dee58c460?q=80&w=2070&auto=format&fit=crop" 
+                  src="/images/equipe.PNG" 
                   alt="Architecture" 
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
@@ -264,7 +264,7 @@ export default function Home() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden glass-card">
                  <img 
-                  src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?q=80&w=2071&auto=format&fit=crop" 
+                  src="/images/carreaux-1.PNG" 
                   alt="Quality work" 
                   className="w-full h-full object-cover opacity-80"
                   referrerPolicy="no-referrer"
@@ -292,9 +292,9 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
              {[
-               "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop",
-               "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
-               "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000&auto=format&fit=crop"
+               "/images/realisations-2.PNG",
+               "/images/realisations-3.PNG",
+               "/images/realisations-4.PNG"
              ].map((url, idx) => (
                <motion.div 
                  key={idx}
