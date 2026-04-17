@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from 'motion/react';
-import { Building2, Hammer, Ruler, Layout, CheckCircle2 } from 'lucide-react';
+import { Building2, Hammer, Ruler, Layout, CheckCircle2, Home as HomeIcon } from 'lucide-react';
 import SectionHeading from '@/components/common/SectionHeading';
 import Button from '@/components/common/Button';
 import { cn } from '@/lib/utils';
