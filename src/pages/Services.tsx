@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import { Building2, Hammer, Ruler, Layout, CheckCircle2, Home as HomeIcon } from 'lucide-react';
 import SectionHeading from '@/components/common/SectionHeading';
 import Button from '@/components/common/Button';
+import Image from "next/image";
 import { cn } from '@/lib/utils';
 
 const detailedServices = [
@@ -13,7 +14,7 @@ const detailedServices = [
     icon: Building2,
     description: "Nous réalisons vos projets du terrassement à la livraison clé en main. Une expertise technique pour des structures solides et durables.",
     items: ["Maisons individuelles", "Immeubles résidentiels", "Bâtiments commerciaux", "Hangars & structures industrielles"],
-    image: "/images/realisations-1.PNG"
+    image: "/images/realisations-1.jpg"
   },
   {
     id: "renovation",
@@ -21,7 +22,7 @@ const detailedServices = [
     icon: Hammer,
     description: "Donnez une seconde vie à vos bâtiments. Nous intervenons pour transformer, agrandir ou remettre à neuf vos espaces existants.",
     items: ["Réfection complète", "Modernisation des espaces", "Extension de bâtiments", "Amélioration esthétique"],
-    image: "/images/realisations-2.PNG"
+    image: "/images/realisations-2.jpg"
   },
   {
     id: "architecture",
@@ -29,7 +30,7 @@ const detailedServices = [
     icon: Ruler,
     description: "Un projet réussi commence par une étude minutieuse. Nous vous accompagnons dans la conception technique et budgétaire.",
     items: ["Conception de plans 2D/3D", "Devis détaillés", "Conseils techniques", "Optimisation des coûts"],
-    image: "/images/realisations-3.PNG"
+    image: "/images/realisations-3.jpg"
   },
   {
     id: "carrelage",
@@ -37,7 +38,7 @@ const detailedServices = [
     icon: Layout,
     description: "La finition est notre signature. Nos artisans carreleurs réalisent des poses millimétrées pour un rendu esthétique irréprochable.",
     items: ["Carrelage sols & murs", "Faïence (cuisine & bain)", "Terrasses & dalles extérieures", "Pose de placo & finitions", "Pierre naturelle"],
-    image: "/images/carreaux-1.PNG"
+    image: "/images/carreaux-1.jpg"
   },
   {
     id: "immobilier",
@@ -45,7 +46,7 @@ const detailedServices = [
     icon: HomeIcon,
     description: "Trouver le bon terrain ou la maison idéale ne doit plus être un parcours du combattant. Nous facilitons vos transactions.",
     items: ["Mise en relation", "Accompagnement administratif", "Conseil investissement", "Gestion locative"],
-    image: "/images/realisations-4.PNG"
+    image: "/images/realisations-4.jpg"
   }
 ];
 
@@ -106,11 +107,12 @@ export default function Services() {
                   "relative aspect-video lg:aspect-square rounded-3xl overflow-hidden shadow-2xl group",
                   idx % 2 === 1 && "lg:order-1"
                 )}>
-                  <img 
-                    src={service.image} 
-                    alt={service.title} 
+                  <Image
+                    src={service.image}
+                    alt={service.title}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 50vw"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    referrerPolicy="no-referrer"
                   />
                   <div className="absolute inset-0 bg-brand-blue/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>

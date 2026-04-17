@@ -5,6 +5,7 @@ import { Phone, ArrowRight, CheckCircle2, Hammer, Ruler, Building2, Layout, Diam
 import { MotionButton as Button } from '@/components/common/Button';
 import SectionHeading from '@/components/common/SectionHeading';
 import Link from "next/link";
+import Image from "next/image";
 import { cn } from '@/lib/utils';
 
 const services = [
@@ -54,11 +55,13 @@ export default function Home() {
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-brand-dark">
         {/* Background Overlay with Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="/images/realisations-1.PNG" 
+          <Image
+            src="/images/realisations-1.jpg"
             alt="Construction" 
+            fill
+            priority
+            sizes="100vw"
             className="w-full h-full object-cover opacity-30 grayscale"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent" />
           
@@ -129,11 +132,12 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="aspect-square rounded-3xl overflow-hidden shadow-2xl relative z-10"
               >
-                <img 
-                  src="/images/equipe.PNG" 
+                <Image
+                  src="/images/equipe.jpg"
                   alt="Architecture" 
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-full object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </motion.div>
               {/* Decorative elements */}
@@ -262,12 +266,13 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-3xl overflow-hidden glass-card">
-                 <img 
-                  src="/images/carreaux-1.PNG" 
+              <div className="relative aspect-[4/3] rounded-3xl overflow-hidden glass-card">
+                 <Image
+                  src="/images/carreaux-1.jpg"
                   alt="Quality work" 
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-full object-cover opacity-80"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               {/* Badge */}
@@ -292,16 +297,22 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
              {[
-               "/images/realisations-2.PNG",
-               "/images/realisations-3.PNG",
-               "/images/realisations-4.PNG"
+               "/images/realisations-2.jpg",
+               "/images/realisations-3.jpg",
+               "/images/realisations-4.jpg"
              ].map((url, idx) => (
                <motion.div 
                  key={idx}
                  whileHover={{ scale: 1.02 }}
                  className="group relative h-80 rounded-3xl overflow-hidden shadow-lg"
                >
-                 <img src={url} alt={`Réalisation ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" referrerPolicy="no-referrer" />
+                 <Image
+                   src={url}
+                   alt={`Réalisation ${idx + 1}`}
+                   fill
+                   sizes="(max-width: 768px) 100vw, 33vw"
+                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                 />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-8">
                    <p className="text-white font-bold">Projet de Résidence</p>
                  </div>

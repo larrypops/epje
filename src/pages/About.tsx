@@ -3,6 +3,7 @@
 import { motion } from 'motion/react';
 import SectionHeading from '@/components/common/SectionHeading';
 import { Target, Eye, ShieldCheck, Zap, Users, Trophy } from 'lucide-react';
+import Image from "next/image";
 
 const values = [
   {
@@ -41,7 +42,7 @@ export default function About() {
                 subtitle="EPJE Construction est une entreprise spécialisée dans le secteur du bâtiment, fondée sur l'expertise et la passion."
             />
         </div>
-        <div className="absolute inset-0 opacity-10 bg-[url('/images/realisations-4.PNG')] bg-cover bg-center pointer-events-none" />
+        <div className="absolute inset-0 opacity-10 bg-[url('/images/realisations-4.jpg')] bg-cover bg-center pointer-events-none" />
       </section>
 
       {/* Story */}
@@ -60,11 +61,23 @@ export default function About() {
               </p>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mt-12 transition-transform hover:-translate-y-2">
-                <img src="/images/realisations-1.PNG" className="w-full h-full object-cover" alt="Chantier" referrerPolicy="no-referrer" />
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl mt-12 transition-transform hover:-translate-y-2">
+                <Image
+                  src="/images/realisations-1.jpg"
+                  alt="Chantier"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-2">
-                <img src="/images/equipe.PNG" className="w-full h-full object-cover" alt="Architecture" referrerPolicy="no-referrer" />
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl transition-transform hover:-translate-y-2">
+                <Image
+                  src="/images/equipe.jpg"
+                  alt="Architecture"
+                  fill
+                  sizes="(max-width: 1024px) 50vw, 25vw"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
