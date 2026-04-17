@@ -89,7 +89,7 @@ export default function Home() {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="secondary" size="lg" className="px-10 h-16 rounded-2xl group" onClick={() => window.open('https://wa.me/237694538117', '_blank')}>
+                <Button variant="secondary" size="lg" className="px-10 h-16 rounded-2xl group" onClick={() => window.open('https://wa.me/23753483397', '_blank')}>
                   <Phone className="mr-3" size={20} />
                   Appeler Maintenant
                 </Button>
@@ -343,7 +343,7 @@ export default function Home() {
                variant="secondary" 
                size="xl" 
                className="rounded-2xl px-12 h-20 group"
-               onClick={() => window.open('https://wa.me/237694538117', '_blank')}
+               onClick={() => window.open('https://wa.me/23753483397', '_blank')}
             >
               <MessageCircle size={24} className="mr-3" />
               Démarrer sur WhatsApp

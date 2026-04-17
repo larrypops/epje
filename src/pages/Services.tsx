@@ -130,7 +130,7 @@ export default function Services() {
                 Nous étudions chaque cas de manière personnalisée pour offrir la solution la plus adaptée à vos besoins et à votre budget.
             </p>
             <div className="flex justify-center gap-4">
-                <Button variant="secondary" size="lg" className="rounded-xl px-12" onClick={() => window.open('https://wa.me/237694538117', '_blank')}>
+                <Button variant="secondary" size="lg" className="rounded-xl px-12" onClick={() => window.open('https://wa.me/23753483397', '_blank')}>
                     Discuter de mon projet
                 </Button>
             </div>

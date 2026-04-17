@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 export default function WhatsAppButton() {
-  const whatsappUrl = "https://wa.me/237694538117";
+  const whatsappUrl = "https://wa.me/23753483397";
 
   return (
     <motion.a

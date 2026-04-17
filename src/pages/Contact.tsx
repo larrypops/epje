@@ -91,7 +91,7 @@ export default function Contact() {
               <motion.div 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
-                onClick={() => window.open('https://wa.me/237694538117', '_blank')}
+                onClick={() => window.open('https://wa.me/23753483397', '_blank')}
                 className="bg-green-500 p-8 rounded-3xl shadow-lg text-white cursor-pointer hover:bg-green-600 transition-colors group"
               >
                 <div className="flex items-center gap-4 mb-4">

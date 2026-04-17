@@ -82,7 +82,7 @@ export default function Navbar() {
             <Phone size={16} />
             <span>+237 694 538 117</span>
           </a>
-          <a href="https://wa.me/237694538117" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
+          <a href="https://wa.me/23753483397" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
             <Button variant="secondary" size="sm" className="gap-2">
               <MessageCircle size={16} />
               <span>WhatsApp</span>
@@ -124,7 +124,7 @@ export default function Navbar() {
                   </div>
                   <span>+237 694 538 117</span>
                 </a>
-                <a href="https://wa.me/237694538117" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
+                <a href="https://wa.me/23753483397" target="_blank" rel="noopener noreferrer" aria-label="Discuter sur WhatsApp">
                   <Button variant="secondary" className="w-full gap-2 py-4">
                     <MessageCircle size={20} />
                     <span>WhatsApp</span>
