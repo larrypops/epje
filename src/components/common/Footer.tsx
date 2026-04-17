@@ -11,13 +11,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           <div className="space-y-6">
             <Link href="/" className="flex items-center gap-2">
-              <div className="w-11 h-11 rounded-lg overflow-hidden shadow-sm ring-1 ring-white/10">
+              <div className="w-11 h-11 rounded-lg overflow-hidden shadow-sm ring-1 ring-white/10 bg-white">
                 <Image
                   src="/images/logo.jpg"
                   alt="Logo EPJE Construction"
                   width={44}
                   height={44}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-0.5"
                 />
               </div>
               <div className="flex flex-col">

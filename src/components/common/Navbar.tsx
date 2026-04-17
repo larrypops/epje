@@ -42,13 +42,13 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-11 h-11 rounded-lg overflow-hidden shadow-sm ring-1 ring-brand-blue/10 group-hover:rotate-3 transition-transform duration-300">
+          <div className="w-11 h-11 rounded-lg overflow-hidden shadow-sm ring-1 ring-brand-blue/10 bg-white group-hover:rotate-3 transition-transform duration-300">
             <Image
               src="/images/logo.jpg"
               alt="Logo EPJE Construction"
               width={44}
               height={44}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain p-0.5"
               priority
             />
           </div>
